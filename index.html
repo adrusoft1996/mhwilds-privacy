@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — MH Wilds Build Planner</title>
+  <style>
+    :root {
+      --bg: #14110f;
+      --fg: #f4ebe1;
+      --muted: #b9a99a;
+      --accent: #e1a658;
+      --card: #1f1a17;
+      --border: #3a302a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.35rem; color: var(--accent); }
+    h2 { font-size: 1.2rem; margin-top: 1.75rem; }
+    h3 { font-size: 1.05rem; margin-top: 1.25rem; }
+    p, li { color: var(--fg); }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
+      margin: 1rem 0;
+    }
+    a { color: var(--accent); }
+    nav { margin: 1rem 0 1.5rem; }
+    nav a { margin-right: 1rem; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+    ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      MH Wilds Build Planner (<code>com.adrusoft.mhwilds.planner</code>)<br />
+      Last updated: 5 September 2026<br />
+      Contact: <a href="mailto:adrisansal.327@gmail.com">adrisansal.327@gmail.com</a>
+    </p>
+    <nav>
+      <a href="#en">English</a>
+      <a href="#es">Español</a>
+    </nav>
+
+    <section id="en">
+      <h2>English</h2>
+
+      <h3>Who we are</h3>
+      <p>
+        MH Wilds Build Planner (“the App”) is an unofficial fan-made Android application
+        for planning Monster Hunter Wilds builds. It is not affiliated with Capcom Co., Ltd.
+      </p>
+
+      <h3>Data we do not collect</h3>
+      <p>
+        We do <strong>not</strong> operate a proprietary analytics/ads backend that collects
+        personal profiles. The App does <strong>not</strong> require creating an account with
+        us to use the offline catalog, editor, wishlist, or OCR scanner.
+      </p>
+
+      <h3>Data stored on your device</h3>
+      <ul>
+        <li>Saved builds, wishlist items, and material inventory (local Room database)</li>
+        <li>App language preference (SharedPreferences)</li>
+        <li>
+          Optional Gemini API key, stored with EncryptedSharedPreferences (AES) on the device
+          and excluded from Android Auto Backup / device transfer
+        </li>
+      </ul>
+
+      <h3>Optional online features</h3>
+      <div class="card">
+        <p><strong>Google Gemini (bring your own API key)</strong></p>
+        <p>
+          If you enter a Gemini API key in Settings, that key is used only to call Google’s
+          Generative AI APIs for Build Advisor, optional scan refinement, and optional
+          material/farm lookup hints. Requests contain the build/OCR/material context you
+          choose to analyze. Your key and those requests go to Google under Google’s terms.
+          We do not receive or store your API key on our servers.
+        </p>
+        <p><strong>Community (Firebase)</strong></p>
+        <p>
+          If you enable Community features, the App may use Firebase Authentication
+          (anonymous and/or Google Sign-In) and Cloud Firestore / Cloud Messaging. That may
+          include a display name, bio, published builds, votes, reports, and push tokens.
+          Processing is performed by Google according to their documentation.
+        </p>
+      </div>
+
+      <h3>Permissions</h3>
+      <ul>
+        <li><strong>Internet</strong> — Gemini, Community, optional remote images</li>
+        <li><strong>Camera</strong> — optional capture for OCR (gallery pick also works)</li>
+        <li><strong>Notifications</strong> — optional Community push alerts</li>
+      </ul>
+
+      <h3>Children</h3>
+      <p>The App is not directed at children under 13.</p>
+
+      <h3>Your choices</h3>
+      <ul>
+        <li>Clear the Gemini API key anytime in Settings</li>
+        <li>Uninstall the App to remove local databases and preferences</li>
+        <li>Disable Community / notifications in-app or at the system level</li>
+      </ul>
+
+      <h3>Changes</h3>
+      <p>
+        We may update this policy; the “Last updated” date will change. Continued use after
+        changes means you accept the updated policy.
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="es">
+      <h2>Español</h2>
+
+      <h3>Quiénes somos</h3>
+      <p>
+        MH Wilds Build Planner (“la App”) es una aplicación Android no oficial hecha por fans
+        para planificar builds de Monster Hunter Wilds. No está afiliada a Capcom Co., Ltd.
+      </p>
+
+      <h3>Datos que no recopilamos</h3>
+      <p>
+        No operamos un backend propio de publicidad/analítica que cree perfiles personales.
+        La App <strong>no</strong> exige crear una cuenta con nosotros para usar el catálogo
+        offline, el editor, la wishlist o el escáner OCR.
+      </p>
+
+      <h3>Datos en tu dispositivo</h3>
+      <ul>
+        <li>Builds guardados, wishlist e inventario de materiales (base Room local)</li>
+        <li>Preferencia de idioma (SharedPreferences)</li>
+        <li>
+          API key opcional de Gemini, guardada con EncryptedSharedPreferences (AES) y excluida
+          de Autorespaldo / transferencia de dispositivo de Android
+        </li>
+      </ul>
+
+      <h3>Funciones online opcionales</h3>
+      <div class="card">
+        <p><strong>Google Gemini (tu propia API key)</strong></p>
+        <p>
+          Si introduces una API key en Ajustes, solo se usa para llamar a las APIs de IA
+          generativa de Google (Asesor, refinamiento de escaneo, tips de farm). Esas consultas
+          van a Google bajo sus términos. Nosotros no recibimos ni guardamos tu API key en
+          servidores propios.
+        </p>
+        <p><strong>Comunidad (Firebase)</strong></p>
+        <p>
+          Si usas Comunidad, pueden emplearse Firebase Auth, Firestore y mensajería (nombre,
+          bio, builds publicados, votos, reportes, tokens push). El tratamiento lo realiza
+          Google según su documentación.
+        </p>
+      </div>
+
+      <h3>Permisos</h3>
+      <ul>
+        <li><strong>Internet</strong> — Gemini, Comunidad, imágenes remotas opcionales</li>
+        <li><strong>Cámara</strong> — captura opcional para OCR (también galería)</li>
+        <li><strong>Notificaciones</strong> — avisos opcionales de Comunidad</li>
+      </ul>
+
+      <h3>Menores</h3>
+      <p>La App no está dirigida a menores de 13 años.</p>
+
+      <h3>Tus opciones</h3>
+      <ul>
+        <li>Borrar la API key en Ajustes</li>
+        <li>Desinstalar para eliminar datos locales</li>
+        <li>Desactivar Comunidad / notificaciones</li>
+      </ul>
+
+      <h3>Contacto</h3>
+      <p><a href="mailto:adrisansal.327@gmail.com">adrisansal.327@gmail.com</a></p>
+    </section>
+  </main>
+</body>
+</html>
