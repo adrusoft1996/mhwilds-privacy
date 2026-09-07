@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Account deletion — MH Wilds Build Planner</title>
+  <style>
+    :root {
+      --bg: #14110f;
+      --fg: #f4ebe1;
+      --muted: #b9a99a;
+      --accent: #e1a658;
+      --card: #1f1a17;
+      --border: #3a302a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.35rem; color: var(--accent); }
+    h2 { font-size: 1.2rem; margin-top: 1.75rem; }
+    p, li { color: var(--fg); }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
+      margin: 1rem 0;
+    }
+    a { color: var(--accent); }
+    ol { padding-left: 1.2rem; }
+    hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Account &amp; data deletion</h1>
+    <p class="meta">
+      MH Wilds Build Planner (<code>com.adrusoft.mhwilds.planner</code>)<br />
+      Last updated: 7 September 2026<br />
+      Contact: <a href="mailto:adrisansal.327@gmail.com">adrisansal.327@gmail.com</a>
+    </p>
+
+    <div class="card">
+      <p>
+        This page explains how to request deletion of a Community account associated with
+        <strong>MH Wilds Build Planner</strong> and what data is removed.
+      </p>
+    </div>
+
+    <h2>How to request deletion</h2>
+    <ol>
+      <li>
+        Email
+        <a href="mailto:adrisansal.327@gmail.com?subject=MH%20Wilds%20Build%20Planner%20-%20Account%20deletion%20request">adrisansal.327@gmail.com</a>
+        from the address linked to your Google account (if you linked Google), or include your
+        in-app hunter display name / Community UID if you know it.
+      </li>
+      <li>Use the subject line: <strong>MH Wilds Build Planner — Account deletion request</strong>.</li>
+      <li>
+        We will delete or anonymize Community account data associated with your Firebase Auth
+        user within <strong>30 days</strong> of verifying the request.
+      </li>
+    </ol>
+
+    <h2>What is deleted</h2>
+    <ul>
+      <li>Firebase Authentication account for this app (anonymous and/or linked Google)</li>
+      <li>Hunter profile fields stored for Community (display name, bio, avatar URL references)</li>
+      <li>Published builds, votes, and reports tied to that account (or anonymized where retention is required for abuse prevention)</li>
+      <li>Push notification tokens for that account</li>
+    </ul>
+
+    <h2>What is not deleted automatically</h2>
+    <ul>
+      <li>
+        <strong>Data stored only on your device</strong> (saved builds, wishlist, material inventory,
+        Gemini API key): uninstall the app or clear app storage. We cannot access that data remotely.
+      </li>
+      <li>
+        Aggregated or anonymized logs that Google Firebase may retain under Google’s policies.
+      </li>
+    </ul>
+
+    <h2>Español — cómo solicitar el borrado</h2>
+    <ol>
+      <li>
+        Escribe a
+        <a href="mailto:adrisansal.327@gmail.com?subject=MH%20Wilds%20Build%20Planner%20-%20Solicitud%20de%20borrado%20de%20cuenta">adrisansal.327@gmail.com</a>
+        desde el correo de tu cuenta Google (si la vinculaste), o incluye tu nombre de cazador / UID.
+      </li>
+      <li>Asunto: <strong>MH Wilds Build Planner — Solicitud de borrado de cuenta</strong>.</li>
+      <li>Eliminaremos o anonimizaremos los datos de Comunidad de esa cuenta en un máximo de <strong>30 días</strong>.</li>
+    </ol>
+    <p>
+      Los datos solo locales (builds, wishlist, API key) se borran desinstalando la app o limpiando
+      el almacenamiento; no tenemos acceso remoto a ellos.
+    </p>
+
+    <hr />
+    <p>
+      <a href="./">Privacy policy</a>
+    </p>
+  </main>
+</body>
+</html>
